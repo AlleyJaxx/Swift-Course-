@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mount_hutt_app" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +20,470 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mt_Hutt" translatesAutoresizingMaskIntoConstraints="NO" id="uxb-TJ-C4T">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="0Du-s1-pib">
+                                <rect key="frame" x="20" y="20" width="248" height="315"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="eyZ-ls-52P">
+                                        <rect key="frame" x="0.0" y="0.0" width="131" height="48"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OUTDOOR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WzO-ug-BtQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="24"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADVENTURES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rE2-h0-z0f">
+                                                <rect key="frame" x="0.0" y="24" width="131" height="24"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aLU-2D-vYV">
+                                        <rect key="frame" x="0.0" y="88" width="239" height="152"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOUNT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ljw-qX-INP">
+                                                <rect key="frame" x="0.0" y="0.0" width="239" height="76"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="63"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HUTT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Quh-Ul-Aqn">
+                                                <rect key="frame" x="0.0" y="76" width="239" height="76"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="63"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Zrc-hD-dkl">
+                                        <rect key="frame" x="0.0" y="280" width="248" height="35"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compass" translatesAutoresizingMaskIntoConstraints="NO" id="Ilz-Gl-a9d">
+                                                <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Methven, Christchurch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bm1-Y7-5GM">
+                                                <rect key="frame" x="45" y="0.0" width="203" height="35"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mR5-hG-3ce">
+                                <rect key="frame" x="206" y="473" width="188" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2r-Q6-QMT">
+                                        <rect key="frame" x="17" y="0.0" width="155" height="30"/>
+                                        <color key="backgroundColor" red="0.35668864884608786" green="0.60565767722920705" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="ABOUT MOUNT HUTT">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="6k8-BT-Sqd" kind="show" id="zy2-tT-B3m"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I1z-sI-mKZ">
+                                        <rect key="frame" x="0.0" y="50" width="188" height="30"/>
+                                        <color key="backgroundColor" red="0.35668864880000001" green="0.60565767719999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="PHOTOS OF MOUNT HUTT">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="GqJ-cD-6S9" kind="show" id="0S5-BH-hts"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="uxb-TJ-C4T" secondAttribute="trailing" id="Ewr-jb-kZS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mR5-hG-3ce" secondAttribute="bottom" constant="47" id="KoS-Lb-W9r"/>
+                            <constraint firstItem="0Du-s1-pib" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="QIX-KE-dPG"/>
+                            <constraint firstItem="0Du-s1-pib" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="QJE-tE-p8W"/>
+                            <constraint firstItem="uxb-TJ-C4T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hha-IK-1SX"/>
+                            <constraint firstItem="uxb-TJ-C4T" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="kD3-7v-I5M"/>
+                            <constraint firstItem="mR5-hG-3ce" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p9J-1a-NaH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uxb-TJ-C4T" secondAttribute="bottom" id="xof-4b-9rg"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="563" y="479"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pfF-wF-9fl">
+            <objects>
+                <viewController id="6k8-BT-Sqd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Dg-u6-UwZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="t1v-cX-DOT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wcN-QP-rE7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mount-Hutt" translatesAutoresizingMaskIntoConstraints="NO" id="Jbo-dL-AiU">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="152"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="152" id="Tk4-07-6tW">
+                                        <variation key="heightClass=compact" constant="120"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT MOUNT HUTT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfB-vI-53R">
+                                <rect key="frame" x="191" y="64" width="219" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="6Fz-GD-aKI"/>
+                                    <constraint firstAttribute="width" constant="219" id="KdQ-TO-DQv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="46h-6f-Alm">
+                                <rect key="frame" x="20" y="172" width="560" height="408"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="y8b-I6-SEE">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="72"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Area" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pv-Vr-OPV">
+                                                <rect key="frame" x="0.0" y="0.0" width="96" height="37"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="0gY-DZ-UAq"/>
+                                                    <constraint firstAttribute="width" constant="219" id="Wqt-Vr-Ykx"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="0gY-DZ-UAq"/>
+                                                        <exclude reference="Wqt-Vr-Ykx"/>
+                                                    </mask>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="365 Hectares " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39J-Zg-Wql">
+                                                <rect key="frame" x="0.0" y="37" width="119" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="Fao-2q-JGI"/>
+                                                    <constraint firstAttribute="width" constant="219" id="h6a-lx-Bga"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="Fao-2q-JGI"/>
+                                                        <exclude reference="h6a-lx-Bga"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="30" width="100" height="24"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="54"/>
+                                        </variation>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PMc-31-ENY">
+                                        <rect key="frame" x="0.0" y="72" width="560" height="214"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5b-wt-HsZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="69" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="219" id="cmh-7u-AiD"/>
+                                                    <constraint firstAttribute="height" constant="24" id="rer-RZ-tip"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="cmh-7u-AiD"/>
+                                                        <exclude reference="rer-RZ-tip"/>
+                                                    </mask>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gB8-Tk-oqr">
+                                                <rect key="frame" x="0.0" y="46" width="546" height="168"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="219" id="avr-zv-HZT"/>
+                                                    <constraint firstAttribute="height" constant="24" id="fkC-3v-0Ke"/>
+                                                </constraints>
+                                                <mutableString key="text">About 45 years ago two Methven boys became interested in Mt Hutt for its weather and its character. They were Malcolm Spark, son of Bert Spark licensee of Canterbury Hotel (Brown Pub) and charter President of Methven Lions Club 1967, and Roger Goldsbrough from Northfield Gardens. Malcolm had a particular interest in meteorology and Roger in skiing, and together they enjoyed the outdoor playground of our local mountains. They were interested in the south basin of Mt Hutt with its glistening winter snows, and Malcolm had already made notes about the mountain.</mutableString>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="avr-zv-HZT"/>
+                                                        <exclude reference="fkC-3v-0Ke"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact" misplaced="YES">
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                                                    <rect key="frame" x="0.0" y="30" width="558" height="97"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <variation key="heightClass=compact" misplaced="YES" spacing="0.0">
+                                            <rect key="frame" x="0.0" y="54" width="560" height="127"/>
+                                        </variation>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="A3N-hE-GFB">
+                                        <rect key="frame" x="0.0" y="286" width="560" height="122"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7K-Yy-gzU">
+                                                <rect key="frame" x="0.0" y="0.0" width="110" height="37"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="7Aj-11-6gA"/>
+                                                    <constraint firstAttribute="width" constant="219" id="7Hb-ks-sbG"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="7Aj-11-6gA"/>
+                                                        <exclude reference="7Hb-ks-sbG"/>
+                                                    </mask>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTC-2U-Z5x">
+                                                <rect key="frame" x="0.0" y="47" width="560" height="75"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="219" id="Jom-ud-NNL"/>
+                                                    <constraint firstAttribute="height" constant="24" id="l64-Rs-oHs"/>
+                                                </constraints>
+                                                <string key="text">Mount Hutt rises to the west of the Canterbury Plains in the South Island of New Zealand, above the braided upper reaches of the Rakaia River, and 80 kilometres west of Christchurch. Its summit is 2190 metres above sea level.</string>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="Jom-ud-NNL"/>
+                                                        <exclude reference="l64-Rs-oHs"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact" misplaced="YES">
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                                                    <rect key="frame" x="0.0" y="30" width="553" height="49"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <variation key="heightClass=compact" misplaced="YES" spacing="0.0">
+                                            <rect key="frame" x="0.0" y="181" width="560" height="79"/>
+                                        </variation>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZ3-Zx-ZK9">
+                                <rect key="frame" x="26" y="20" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="i22-uf-j0C"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bfB-vI-53R" firstAttribute="centerX" secondItem="wcN-QP-rE7" secondAttribute="centerX" id="4gy-2c-nlj"/>
+                            <constraint firstItem="bfB-vI-53R" firstAttribute="top" secondItem="0Dg-u6-UwZ" secondAttribute="bottom" constant="44" id="4ow-mt-nh1"/>
+                            <constraint firstItem="46h-6f-Alm" firstAttribute="top" secondItem="Jbo-dL-AiU" secondAttribute="bottom" constant="10" id="9N8-iV-fLa"/>
+                            <constraint firstItem="46h-6f-Alm" firstAttribute="leading" secondItem="wcN-QP-rE7" secondAttribute="leading" constant="20" id="COb-s2-BaP"/>
+                            <constraint firstItem="t1v-cX-DOT" firstAttribute="top" secondItem="46h-6f-Alm" secondAttribute="bottom" constant="10" id="D1M-hu-EUs"/>
+                            <constraint firstItem="bfB-vI-53R" firstAttribute="centerY" secondItem="Jbo-dL-AiU" secondAttribute="centerY" id="Dbh-V0-bdM"/>
+                            <constraint firstItem="bfB-vI-53R" firstAttribute="centerY" secondItem="Jbo-dL-AiU" secondAttribute="centerY" id="NRG-tA-QEn"/>
+                            <constraint firstItem="t1v-cX-DOT" firstAttribute="top" secondItem="46h-6f-Alm" secondAttribute="bottom" constant="20" id="Phx-4l-bYP"/>
+                            <constraint firstItem="bfB-vI-53R" firstAttribute="top" secondItem="0Dg-u6-UwZ" secondAttribute="bottom" constant="59" id="ZIh-4R-CjQ"/>
+                            <constraint firstItem="Jbo-dL-AiU" firstAttribute="top" secondItem="wcN-QP-rE7" secondAttribute="top" id="k5c-dd-b6x"/>
+                            <constraint firstAttribute="trailing" secondItem="Jbo-dL-AiU" secondAttribute="trailing" id="pG2-qv-pQS"/>
+                            <constraint firstAttribute="trailing" secondItem="46h-6f-Alm" secondAttribute="trailing" constant="20" id="u4k-L5-11f"/>
+                            <constraint firstItem="Jbo-dL-AiU" firstAttribute="leading" secondItem="wcN-QP-rE7" secondAttribute="leading" id="zjn-fW-D7L"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Dbh-V0-bdM"/>
+                                <exclude reference="NRG-tA-QEn"/>
+                                <exclude reference="ZIh-4R-CjQ"/>
+                                <exclude reference="Phx-4l-bYP"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JaP-hq-53Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1284" y="127"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="A8S-JN-9Qq">
+            <objects>
+                <viewController id="GqJ-cD-6S9" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2FP-Td-ILZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="iR4-gy-UPt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="58L-CS-SxQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photos of Mount Hutt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0U-Sq-nbC">
+                                <rect key="frame" x="208" y="28" width="184" height="23"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xW0-zu-ip9">
+                                <rect key="frame" x="20" y="28" width="41" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="0iJ-kU-Z0a"/>
+                                    <constraint firstAttribute="width" constant="41" id="sJT-9l-fQp"/>
+                                </constraints>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="yH0-iv-DN7"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="MtHutt-Getting-There-7" translatesAutoresizingMaskIntoConstraints="NO" id="MAb-B3-70s">
+                                <rect key="frame" x="20" y="64" width="260" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="134" id="91P-hb-foG"/>
+                                    <constraint firstAttribute="height" constant="95" id="KzV-42-HbS"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="KzV-42-HbS"/>
+                                        <exclude reference="91P-hb-foG"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rakaia_River_Mount_Hutt" translatesAutoresizingMaskIntoConstraints="NO" id="X13-IQ-n2u">
+                                <rect key="frame" x="20" y="222" width="300" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="5zl-a6-3iH"/>
+                                    <constraint firstAttribute="width" constant="134" id="cdc-iJ-Kmk"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5zl-a6-3iH"/>
+                                        <exclude reference="cdc-iJ-Kmk"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ski.-Ski-Field-in-the-Ski-Mt-Hutt-on-a-fabulous-day-taken-by-Peter-Clinton-Baker-from-The-Sea-Kayak-Company" translatesAutoresizingMaskIntoConstraints="NO" id="CN5-0b-07p">
+                                <rect key="frame" x="280" y="222" width="300" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="134" id="5eC-i1-fqY"/>
+                                    <constraint firstAttribute="height" constant="95" id="qYd-W6-QMP"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="qYd-W6-QMP"/>
+                                        <exclude reference="5eC-i1-fqY"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Mount-Hutt-1" translatesAutoresizingMaskIntoConstraints="NO" id="QPR-qW-jeo">
+                                <rect key="frame" x="288" y="64" width="292" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="134" id="GCR-iR-CHi"/>
+                                    <constraint firstAttribute="height" constant="95" id="J1g-bg-v8p"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="J1g-bg-v8p"/>
+                                        <exclude reference="GCR-iR-CHi"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guests-are-thrilled-with-perfect-conditions-for-their-advanced-lesson-at-mt-hutt" translatesAutoresizingMaskIntoConstraints="NO" id="udf-bo-pJA">
+                                <rect key="frame" x="150" y="380" width="300" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="UN8-3q-ouL"/>
+                                    <constraint firstAttribute="width" constant="134" id="Z7W-EQ-6Ku"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="UN8-3q-ouL"/>
+                                        <exclude reference="Z7W-EQ-6Ku"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CN5-0b-07p" firstAttribute="width" secondItem="58L-CS-SxQ" secondAttribute="width" multiplier="0.5" id="24R-b8-7GF"/>
+                            <constraint firstItem="X13-IQ-n2u" firstAttribute="top" secondItem="MAb-B3-70s" secondAttribute="bottom" constant="8" id="2Mp-tQ-eLg"/>
+                            <constraint firstItem="X13-IQ-n2u" firstAttribute="leading" secondItem="58L-CS-SxQ" secondAttribute="leadingMargin" id="4MC-XS-ZUM"/>
+                            <constraint firstItem="QPR-qW-jeo" firstAttribute="top" secondItem="xW0-zu-ip9" secondAttribute="top" constant="36" id="530-vC-231"/>
+                            <constraint firstItem="MAb-B3-70s" firstAttribute="top" secondItem="xW0-zu-ip9" secondAttribute="firstBaseline" constant="20" id="BV8-w9-TJC"/>
+                            <constraint firstItem="xW0-zu-ip9" firstAttribute="top" secondItem="2FP-Td-ILZ" secondAttribute="bottom" constant="8" id="C8T-aR-e6I"/>
+                            <constraint firstItem="iR4-gy-UPt" firstAttribute="top" secondItem="MAb-B3-70s" secondAttribute="bottom" constant="318" id="CJy-tV-2ya"/>
+                            <constraint firstItem="MAb-B3-70s" firstAttribute="leading" secondItem="58L-CS-SxQ" secondAttribute="leadingMargin" id="FSp-8j-N8c"/>
+                            <constraint firstItem="udf-bo-pJA" firstAttribute="height" secondItem="58L-CS-SxQ" secondAttribute="height" multiplier="0.25" id="FqX-6J-wlW"/>
+                            <constraint firstItem="MAb-B3-70s" firstAttribute="centerX" secondItem="58L-CS-SxQ" secondAttribute="centerX" id="GzJ-TR-EKb"/>
+                            <constraint firstItem="F0U-Sq-nbC" firstAttribute="centerX" secondItem="58L-CS-SxQ" secondAttribute="centerX" id="JHf-2r-N14"/>
+                            <constraint firstItem="MAb-B3-70s" firstAttribute="width" secondItem="58L-CS-SxQ" secondAttribute="width" multiplier="0.5" id="KpP-eL-wTL"/>
+                            <constraint firstItem="MAb-B3-70s" firstAttribute="top" secondItem="F0U-Sq-nbC" secondAttribute="bottom" constant="26" id="UB8-jP-fyb"/>
+                            <constraint firstItem="F0U-Sq-nbC" firstAttribute="top" secondItem="2FP-Td-ILZ" secondAttribute="bottom" constant="8" id="VJO-T6-iw6"/>
+                            <constraint firstItem="X13-IQ-n2u" firstAttribute="width" secondItem="58L-CS-SxQ" secondAttribute="width" multiplier="0.5" id="W3S-Hy-DDf"/>
+                            <constraint firstItem="MAb-B3-70s" firstAttribute="leading" secondItem="58L-CS-SxQ" secondAttribute="leading" constant="20" id="ZG7-GQ-U7i"/>
+                            <constraint firstItem="MAb-B3-70s" firstAttribute="height" secondItem="58L-CS-SxQ" secondAttribute="height" multiplier="0.25" id="atr-DK-MK6"/>
+                            <constraint firstItem="udf-bo-pJA" firstAttribute="centerX" secondItem="58L-CS-SxQ" secondAttribute="centerX" id="cV0-rH-Dvw"/>
+                            <constraint firstItem="QPR-qW-jeo" firstAttribute="top" secondItem="F0U-Sq-nbC" secondAttribute="bottom" constant="20" id="cZP-7S-6ky"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CN5-0b-07p" secondAttribute="trailing" id="hNS-Aj-IgD"/>
+                            <constraint firstItem="udf-bo-pJA" firstAttribute="top" secondItem="CN5-0b-07p" secondAttribute="bottom" constant="8" id="iG2-7v-6HD"/>
+                            <constraint firstItem="QPR-qW-jeo" firstAttribute="top" secondItem="F0U-Sq-nbC" secondAttribute="bottom" constant="15" id="iO9-8y-KQx"/>
+                            <constraint firstItem="QPR-qW-jeo" firstAttribute="trailing" secondItem="58L-CS-SxQ" secondAttribute="trailingMargin" id="lZR-TK-SeN"/>
+                            <constraint firstItem="MAb-B3-70s" firstAttribute="top" secondItem="xW0-zu-ip9" secondAttribute="bottom" constant="22" id="mwv-E7-TNk"/>
+                            <constraint firstItem="QPR-qW-jeo" firstAttribute="width" secondItem="58L-CS-SxQ" secondAttribute="width" multiplier="0.5" id="nwg-lk-9z3"/>
+                            <constraint firstItem="X13-IQ-n2u" firstAttribute="height" secondItem="58L-CS-SxQ" secondAttribute="height" multiplier="0.25" id="o0O-mb-Y2W"/>
+                            <constraint firstItem="CN5-0b-07p" firstAttribute="top" secondItem="QPR-qW-jeo" secondAttribute="bottom" constant="8" id="quU-ht-ZWC"/>
+                            <constraint firstItem="CN5-0b-07p" firstAttribute="height" secondItem="58L-CS-SxQ" secondAttribute="height" multiplier="0.25" id="uEk-8u-s9i"/>
+                            <constraint firstItem="udf-bo-pJA" firstAttribute="width" secondItem="58L-CS-SxQ" secondAttribute="width" multiplier="0.5" id="xzt-8N-AfY"/>
+                            <constraint firstItem="xW0-zu-ip9" firstAttribute="leading" secondItem="58L-CS-SxQ" secondAttribute="leadingMargin" id="y9R-Dh-g1n"/>
+                            <constraint firstItem="QPR-qW-jeo" firstAttribute="height" secondItem="58L-CS-SxQ" secondAttribute="height" multiplier="0.25" id="zLS-bY-vUz"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="GzJ-TR-EKb"/>
+                                <exclude reference="UB8-jP-fyb"/>
+                                <exclude reference="ZG7-GQ-U7i"/>
+                                <exclude reference="mwv-E7-TNk"/>
+                                <exclude reference="cZP-7S-6ky"/>
+                                <exclude reference="iO9-8y-KQx"/>
+                                <exclude reference="CJy-tV-2ya"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ll6-w4-Az0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1242" y="845"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Mount-Hutt" width="784" height="588"/>
+        <image name="Mount-Hutt-1" width="784" height="588"/>
+        <image name="MtHutt-Getting-There-7" width="501" height="352"/>
+        <image name="Mt_Hutt" width="1250" height="909"/>
+        <image name="Rakaia_River_Mount_Hutt" width="1024" height="768"/>
+        <image name="Ski.-Ski-Field-in-the-Ski-Mt-Hutt-on-a-fabulous-day-taken-by-Peter-Clinton-Baker-from-The-Sea-Kayak-Company" width="2560" height="1920"/>
+        <image name="compass" width="35" height="35"/>
+        <image name="guests-are-thrilled-with-perfect-conditions-for-their-advanced-lesson-at-mt-hutt" width="720" height="406"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="i22-uf-j0C"/>
+    </inferredMetricsTieBreakers>
 </document>
